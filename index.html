@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<title>Encriptador De Texto.</title>
+	</head>
+	<body>
+
+		<header>
+			<div class="header">
+				<img src="img/logoa.png" alt="logoalura">
+			</div>
+		</header>
+		
+		<main>
+			<div class="contenido-ppal">
+				<section>
+					<textarea class="input-texto" name="" id="" cols="100%" rows="10" placeholder="Ingrese aquí el texto que desea encriptar o desencriptar"></textarea>
+					<br>
+					<p class="p-requi"><img src="img/logosignoexcl.png" alt=""> Solo minusculas y sin acentos.</p>
+					<br> 
+					<div class="botones-crip">
+						<button id="botEnc" type="submit" onclick="btnEncrypt()">Encriptar!</button>
+						<button id="botDes" type="submit" onclick="btnDescrypt()">Desencriptar!</button>	
+					</div>
+				</section>
+	
+				<section>
+					<textarea class="texto-end" readonly="readonly" name="" id="texto-res" cols="30" rows="10" placeholder="Aquí aparecera su texto encriptado"></textarea>
+					<br>
+					<button id="botCop" onclick="btncopy()">Copiar!</button>
+				</section>
+				
+			</div>
+		</main>
+		
+		<footer> <p>Encriptador realizado por Martina Ación Stalioraitis.</p> </footer>
+	</body>
+
+	<script src="scripts.js"></script>
+
+</html>

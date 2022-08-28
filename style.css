@@ -1,0 +1,352 @@
+:root {
+    --primario: #E9ECF8;
+    --secundario: #0A3871;
+    --blanco: #ffffff;
+    --negro: #000000;
+
+    --fuentePrincipal: 'Source Code Pro', monospace; 
+    --fuenteSecundaria: 'Michroma', sans-serif;
+}
+
+body {
+    background-image: url(img/Fondos/8519-universo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+    max-width: 940px;
+    margin: 50px auto;
+}
+
+.header img{
+    background-color: #9b3d00;
+    padding: 30px;
+    border-radius: 200px;
+}
+
+.contenido-ppal {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+    margin-top: 50px;
+    padding: 50px 50px;
+}
+
+.input-texto {
+    background-color: #1c89a4;
+    padding: 25px;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    width: 600px;
+    height: 500px;
+    outline: none;
+    resize: none;
+    font-family: var(--fuentePrincipal);
+    box-shadow: 10px 10px 30px 5px black, -10px -10px 30px 5px black;
+}
+
+.input-texto::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 400px;
+    
+}
+
+
+
+button {
+    border-radius: 60px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-family: var(--fuenteSecundaria);
+    box-shadow: 3px 3px 8px white, -3px -3px 8px white;
+    cursor: pointer;
+}
+
+#botEnc{
+    background-color: rgb(21, 64, 92);
+    color: var(--primario);
+    border-color: var(--primario);
+    margin-right: 50px;
+    
+    margin-left: 50px;
+}
+#botEnc:hover{
+    background-color: black;
+    color: var(--primario);
+    border-color: var(--negro);
+}
+#botDes{
+    background-color: #9b3d00;
+    color: white;
+    border-color: var(--secundario);
+    margin-right: 50px;
+    margin-left: 50px; 
+}
+#botDes:hover{
+    background-color: black;
+}
+
+.p-requi{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+.texto-end {
+    border: none;
+    resize: none;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color: var(--secundario);
+    font-size: 20PX;
+    font-weight: bold;
+    color: var(--blanco);
+    background-image: url(img/MuñecoTextareaimg.png);
+    background-color: rgb(163, 57, 24);
+    background-repeat: no-repeat;
+    background-position: 30px;
+    background-size: 250px;
+    height: 575px;
+    width: 300px;
+    box-shadow: 10px 10px 30px 5px black, -10px -10px 30px 5px black;
+}
+
+.texto-end::placeholder {
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+#botCop{
+    position: relative;
+    left: 50px;
+    bottom: 46px;
+    background-color: black;
+    color: var(--blanco);
+    border-color: var(--blanco); 
+
+}
+
+#botCop:hover{
+    position: relative;
+    left: 50px;
+    bottom: 46px;
+    background-color:rgb(21, 64, 92) ;
+    color: var(--blanco);
+    border-color: var(--blanco); 
+}
+
+footer {
+
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    font-family: var(--fuenteSecundaria);
+    font-size: 16px;
+    backdrop-filter: blur(30px);
+    position: absolute; 
+    top: 900px; 
+    left: 235px;
+    
+}
+
+@media screen and (max-width: 678px) {
+    
+
+    .header{
+        margin-left: 50px;
+    }
+
+    .contenido-ppal {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .input-texto, .texto-end{
+        width: 100%;
+        padding: 20px 2px;
+        height: 300px;
+    }
+
+    .texto-end{
+        background-position: center;
+    }
+
+    button {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+    }
+
+    .botones-crip{
+        max-width: 678px;
+        margin: 0px auto;
+    }
+
+    footer{
+        display: block;
+        position: static;
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 480px){
+    
+    /*RESPONSIVE GENERAL*//*
+    .caja-encabezado, .contenido-principal, .mapa-contenido, .contenido-dif, .video {
+        width: auto;
+    }
+    
+    /*RESPONSIVE HOME*//*
+    h1 {
+        text-align: center;
+    }
+
+    .nav-superior{
+        position: static; 
+        text-align: center;
+    }
+
+    nav li{
+        width: auto;
+        display: block;
+        padding: 10px;
+    }
+
+    .lista-diferenciales, .img-diferenciales {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .img-utensillos {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px ;
+    }
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    background-color: var(--primario);
+    
+}
+
+.container-principal{
+    position: relative;
+    padding-top: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contenido-ppal {
+    display: flex;
+    grid-template-columns: 2 1fr;
+}
+
+.input-text{
+    background-color: var(--primario);
+    border-style: none;
+    color: var(--secundario);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+button {
+    border-radius: 60px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#botEnc{
+    background-color: var(--secundario);
+    color: var(--primario);
+    border-color: var(--primario);
+}
+#botDes{
+    background-color: var(--primario);
+    color: var(--secundario);
+    border-color: var(--secundario);
+    
+}
+
+p {
+    color: #495057;
+    background-image: url(img/logosignoexcl.png);
+    background-repeat: no-repeat;
+    padding-left: 25px; /*ver si lo puedo mejorar*/
+   /* margin: 50px;} */
